@@ -12,8 +12,7 @@ public class BookShelfYearIterator implements Iterator<Book> {
 
     public BookShelfYearIterator(BookShelf bookShelf) {
         this.sortedBooks = new ArrayList<>();
-        for (int i = 0; i < bookShelf.getLength(); i++) {
-            Book book = bookShelf.getBookAt(i);
+        for (Book book : bookShelf) {
             if (book != null) {
                 sortedBooks.add(book);
             }
