@@ -1,11 +1,11 @@
-package practice.ch01;
+package ch01.Sample;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class BookShelfIterator implements Iterator<Book> {
     private BookShelf bookShelf;
-    private int index; // 책꽂이에서 현재 위치를 나타내는 변수
+    private int index;
 
     public BookShelfIterator(BookShelf bookShelf) {
         this.bookShelf = bookShelf;
@@ -13,7 +13,7 @@ public class BookShelfIterator implements Iterator<Book> {
     }
 
     @Override
-    public boolean hasNext() { // 책꽂이에서 꺼내올 다음 책이 있는지 확인하는 메소드
+    public boolean hasNext() {
         if (index < bookShelf.getLength()) {
             return true;
         } else {
@@ -22,11 +22,11 @@ public class BookShelfIterator implements Iterator<Book> {
     }
 
     @Override
-    public Book next() { // 책꽂이에서 다음 책을 꺼내오는 메소드
+    public Book next() {
         if (!hasNext()) {
-            throw new NoSuchElementException(); // 더 이상 꺼내올 책이 없을 때 예외를 던짐
+            throw new NoSuchElementException();
         }
-        Book book = bookShelf.getBookAt(index); // 책꽂이에서 현재 위치의 책을 가져옴
+        Book book = bookShelf.getBookAt(index);
         index++;
         return book;
     }
