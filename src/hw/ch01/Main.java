@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("학번: 20240964 이름: 김가현");
         System.out.println();
-        
+
         BookShelf bookShelf = new BookShelf(10);
         bookShelf.appendBook(new Book("클린코드", "기술", 2008, 30000));
         bookShelf.appendBook(new Book("해리포터와 마법사의 돌", "소설", 1997, 15000));
@@ -19,7 +19,7 @@ public class Main {
         bookShelf.appendBook(new Book("로마인 이야기", "역사", 1992, 25000));
         bookShelf.appendBook(new Book("어린왕자", "소설", 1943, 9000));
 
-        System.out.println("장르 소설 Iterator 테스트");
+        System.out.println("장르 필터 Iterator 테스트");
         Iterator<Book> itNovel = bookShelf.iteratorByGenre("소설");
         while (itNovel.hasNext()) {
             Book book = itNovel.next();
