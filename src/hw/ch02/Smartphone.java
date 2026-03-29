@@ -9,6 +9,6 @@ public class Smartphone {
 
     public void charge() {
         int voltage = charger.charge();
-        System.out.println("스마트폰이 " + voltage + "V에서 충전됩니다.");
+        System.out.println("스마트폰이 " + voltage + "V에서 충전합니다.");
     }
 }
