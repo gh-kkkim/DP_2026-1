@@ -2,7 +2,7 @@ package hw.ch03;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("학번: 20240964 이름: 김가현");
+        System.out.println("학번 : 20240964 이름 : 김가현");
 
         AbstractDisplay d1 = new CharDisplay('H'); // 기본 5회
         AbstractDisplay d2 = new StringDisplay("Hello"); // 기본 5 회
