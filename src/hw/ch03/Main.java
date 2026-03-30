@@ -2,24 +2,21 @@ package hw.ch03;
 
 public class Main {
     public static void main(String[] args) {
-        // 'H'를 가진 CharDisplay 인스턴스를 하나 만든다 
-        AbstractDisplay d1 = new CharDisplay('H');
-
-        // "Hello, world."를 가진 StringDisplay 인스턴스를 하나 만든다 
-        AbstractDisplay d2 = new StringDisplay("Hello");
-
-        // d1,d2 모두 같은 AbstractDisplay의 하위 클래스의 인스턴스이므로
-        // 상속한 display 메소드를 호출할 수 있다
-        // 실제 동작은 CharDisplay나 StringDisplay 클래스에서 정해진다
+        AbstractDisplay d1 = new CharDisplay('H'); // 기본 5회
+        AbstractDisplay d2 = new StringDisplay("Hello"); // 기본 5 회
         d1.display();
         d2.display();
 
-        AbstractDisplay d3 = new CharDisplay('X', 3);
-        AbstractDisplay d4 = new StringDisplay("Test", 7);
+        System.out.println();
+
+        AbstractDisplay d3 = new CharDisplay('X', 3); // 3 회
+        AbstractDisplay d4 = new StringDisplay("Test", 7); // 7 회
         d3.display();
         d4.display();
 
-        AbstractDisplay num = new NumberDisplay(42, 4); 
-        num.display(); 
+        System.out.println();
+
+        AbstractDisplay num = new NumberDisplay(42, 4);
+        num.display();
     }
 }

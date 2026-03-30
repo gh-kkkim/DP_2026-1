@@ -1,7 +1,7 @@
 package hw.ch03;
 
 public class NumberDisplay extends AbstractDisplay {
-    private int number;
+    private int number; // 표시해야 하는 숫자
 
     public NumberDisplay(int number) {
         this.number = number;
@@ -26,5 +26,4 @@ public class NumberDisplay extends AbstractDisplay {
     public void close() {
         System.out.println("<<Number>>");
     }
-    
 }
