@@ -1,6 +1,6 @@
 package practice.ch03;
 
-public class MAin {
+public class Main {
     public static void main(String[] args) {
         //CharDisplay d1 = new CharDisplay('H'); //'H' char, "H" String
         AbstractDisplay d1 = new CharDisplay('H');
