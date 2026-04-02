@@ -5,7 +5,7 @@ import practice.ch04.framework.Product;
 public class IDCard extends Product {
     private String owner;
 
-    public IDCard(String owner) {
+    IDCard(String owner) {
         // 부모의 인자 없는 생성자를 호출
         // super(); // 생략 가능
         // super("x", "y"); // 부모의 인자 있는 생성자 호출
