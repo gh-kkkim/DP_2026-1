@@ -1,10 +1,10 @@
 package hw.ch04.idcard;
 
-import hw.ch04.framework.Factory;
+import hw.ch04.framework.Product;
 
 public class IDCard extends Product {
     private String owner;
-    private int serial;
+    private int serial; 
     private String issuedDate; // 발급 날짜(YYYY-MM-DD)
 
     IDCard(String owner, int serial, String issuedDate) {

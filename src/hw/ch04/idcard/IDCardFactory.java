@@ -5,13 +5,14 @@ import hw.ch04.framework.Product;
 
 public class IDCardFactory extends Factory {
     private int serial = 100;
+    private String baseDate;
 
-    IDCardFactory(String baseDate) {
-        this.issuedDate = baseDate;
+    public IDCardFactory(String baseDate) {
+        this.baseDate = baseDate;
     }
 
     protected synchronized Product createProduct(String owner) {
-        return new IDCard(owner, serial++, issuedDate);
+        return new IDCard(owner, serial++, baseDate);
     }
 
     @Override
