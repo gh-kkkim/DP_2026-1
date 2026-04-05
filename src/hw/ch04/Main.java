@@ -7,6 +7,7 @@ import hw.ch04.licensecard.LicenseCardFactory;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("학번: 20240964 이름: 김가현");
         Factory factory1 = new IDCardFactory("2026-01-15");
         Product card1 = factory1.create("Kim Youngjin");
         Product card2 = factory1.create("Son Heungmin");
