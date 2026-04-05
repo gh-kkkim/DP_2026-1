@@ -28,7 +28,7 @@ public class LoggerSynchronizedLazy {
     public void log(String message) {
         logBuffer.append("[").append(System.currentTimeMillis()).append("] ")
                 .append(message).append("\n");
-        System.out.println("[LoggerStaticInit] " + message);
+        System.out.println("[LoggerSynchronizedLazy] " + message);
     }
 
     public String getLog() {

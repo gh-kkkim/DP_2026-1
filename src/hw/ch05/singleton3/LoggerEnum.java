@@ -12,7 +12,7 @@ public enum LoggerEnum {
     public void log(String message) {
         logBuffer.append("[").append(System.currentTimeMillis()).append("] ")
                 .append(message).append("\n");
-        System.out.println("[LoggerStaticInit] " + message);
+        System.out.println("[LoggerEnum] " + message);
     }
 
     public String getLog() {
