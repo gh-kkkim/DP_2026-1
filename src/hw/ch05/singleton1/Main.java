@@ -2,6 +2,7 @@ package hw.ch05.singleton1;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("학번: 20240964 이름: 김가현");
         System.out.println("========== 방식 1: Static Initializer ==========");
         LoggerStaticInit logger1a = LoggerStaticInit.getInstance();
         LoggerStaticInit logger1b = LoggerStaticInit.getInstance();

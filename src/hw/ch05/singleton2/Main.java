@@ -2,6 +2,7 @@ package hw.ch05.singleton2;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("학번: 20240964 이름: 김가현");
         System.out.println("\n========== 방식 2: Synchronized Lazy ==========");
         LoggerSynchronizedLazy logger2a = LoggerSynchronizedLazy.getInstance();
         LoggerSynchronizedLazy logger2b = LoggerSynchronizedLazy.getInstance();

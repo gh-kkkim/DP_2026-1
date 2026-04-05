@@ -2,6 +2,7 @@ package hw.ch05.singleton3;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("학번: 20240964 이름: 김가현");
         System.out.println("\n========== 방식 3: Enum (권장) ==========");
         LoggerEnum logger3a = LoggerEnum.INSTANCE;
         LoggerEnum logger3b = LoggerEnum.INSTANCE;
