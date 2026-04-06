@@ -23,6 +23,6 @@ public class LicenseCard extends Product {
 
     @Override
     public String toString() {
-        return "[LicenseCard:" + holder + "(" + licenseNumber + ")] - 유효기간: " + issueDate + " ~ " + expiryDate + "을 사용합니다.";
+        return "[LicenseCard:" + holder + "(" + licenseNumber + ")] - 유효기간: " + issueDate + " ~ " + expiryDate;
     }
 }
