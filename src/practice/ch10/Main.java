@@ -18,11 +18,11 @@ public class Main {
         */
 
         // 플레이어 2명 만들기
-        practice.ch10.Player player1 = new practice.ch10.Player("Taro", new WinningStrategy(314));
+        practice.ch10.Player player1 = new practice.ch10.Player("Taro", new ProbStrategy(314));
         practice.ch10.Player player2 = new practice.ch10.Player("Hana", new WinningStrategy(15));
 
         // 게임 시키기
-        for (int i=0; i<10; i++) {
+        for (int i=0; i<1000; i++) {
             // 플레이어 2명에게 각각 손을 얻음
             Hand hand1 = player1.nextHand();
             Hand hand2 = player2.nextHand();
@@ -42,5 +42,9 @@ public class Main {
                 player2.even();
             }
         }
+        
+        System.out.println("Total result:");
+        System.out.println(player1);
+        System.out.println(player2);
     }
 }
