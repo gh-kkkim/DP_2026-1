@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch practice.ch12.Main",
+            "request": "launch",
+            "mainClass": "practice.ch12.Main",
+            "projectName": "DP_2026-1_1d653a36",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Launch ch12.Sample.Main",
+            "request": "launch",
+            "mainClass": "ch12.Sample.Main",
+            "projectName": "DP_2026-1_1d653a36",
+            "console": "integratedTerminal"
+        }
+    ]
+}
