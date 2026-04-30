@@ -4,5 +4,12 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "editor.codeLens": true,
+    "java.codeLens.enabled": true,
+    "java.referencesCodeLens.enabled": true,
+    "java.codeGeneration.useBlocks": true,
+    "[java]": {
+        "editor.codeLens": true
+    }
 }
