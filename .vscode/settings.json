@@ -9,6 +9,7 @@
     "java.codeLens.enabled": true,
     "java.referencesCodeLens.enabled": true,
     "java.codeGeneration.useBlocks": true,
+    "java.autobuild.enabled": true,
     "[java]": {
         "editor.codeLens": true
     }
