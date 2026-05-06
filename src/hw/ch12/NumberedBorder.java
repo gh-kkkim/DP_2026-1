@@ -7,7 +7,7 @@ public class NumberedBorder extends Border {
 
     @Override
     public int getColumns() {
-        return display.getColumns()+3;
+        return display.getColumns()+4;
     }
 
     @Override
@@ -17,6 +17,6 @@ public class NumberedBorder extends Border {
 
     @Override
     public String getRowText(int row) {
-            return (row+1) + "| " + display.getRowText(row); 
+            return String.format("%2d| %s", row + 1, display.getRowText(row));
     }
 }
