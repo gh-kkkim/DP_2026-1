@@ -5,6 +5,34 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "hw.ch03.Main",
+            "projectName": "DP_2026-1_1d653a36"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "practice.ch17.Main",
+            "projectName": "DP_2026-1_1d653a36"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hw.ch12.Main",
+            "projectName": "DP_2026-1_1d653a36"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "practice.ch16.Main",
+            "projectName": "DP_2026-1_1d653a36"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "hw.ch12.Main",
             "projectName": "DP_2026-1_1d27a1f1"
         },
