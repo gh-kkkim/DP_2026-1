@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // 관찰 대상 생성
         NumberGenerator generator = new RandomNumberGenerator();
-
+    
         // 관찰자 생성
         Observer observer1 = new DigitObserver();
         Observer observer2 = new GraphObserver();
@@ -15,5 +15,6 @@ public class Main {
 
         // 관찰대상을 실행
         generator.execute();
+
     }
 }
