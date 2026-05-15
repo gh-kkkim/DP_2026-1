@@ -5,6 +5,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "hw.ch17.Main",
+            "projectName": "DP_2026-1_1d27a1f1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "hw.ch16.Main",
             "projectName": "DP_2026-1_1d27a1f1"
         },
