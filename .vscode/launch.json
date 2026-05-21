@@ -5,6 +5,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "practice.ch20.Main",
+            "projectName": "DP_2026-1_1d653a36"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "ch20.Sample.Main",
             "projectName": "DP_2026-1_1d653a36"
         },
