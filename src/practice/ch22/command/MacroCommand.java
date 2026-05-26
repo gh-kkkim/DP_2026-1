@@ -3,6 +3,7 @@ package practice.ch22.command;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+// 명령어 묶음이면서 하나의 명령어
 public class MacroCommand implements Command {
     // 명령의 배열 
     private Deque<Command> commands = new ArrayDeque<>();
@@ -11,7 +12,7 @@ public class MacroCommand implements Command {
     @Override
     public void execute() {
         for (Command cmd: commands) {
-            cmd.execute();
+            cmd.execute(); // 리커시브 호출
         }
     }
 

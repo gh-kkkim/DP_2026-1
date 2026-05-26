@@ -21,13 +21,15 @@ public class Main extends JFrame implements MouseMotionListener, WindowListener 
 
         this.addWindowListener(this);
         canvas.addMouseMotionListener(this);
+
         clearButton.addActionListener(e -> {
-            history.clear();
-            canvas.repaint();
+            history.clear(); // 이력 전체 삭제
+            canvas.repaint(); // 캔버스 전체 다시 그리기 -> paint()가 호출됨 -> history.execute()가 호출됨 -> 아무것도 그려지지 않음
         });
 
         Box buttonBox = new Box(BoxLayout.X_AXIS);
         buttonBox.add(clearButton);
+
         Box mainBox = new Box(BoxLayout.Y_AXIS);
         mainBox.add(buttonBox);
         mainBox.add(canvas);
@@ -40,6 +42,7 @@ public class Main extends JFrame implements MouseMotionListener, WindowListener 
     // MouseMotionListener용
     @Override
     public void mouseMoved(MouseEvent e) {
+        System.out.println("mouseMoved: " + e.getPoint());
     }
 
     @Override

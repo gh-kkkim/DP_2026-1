@@ -23,7 +23,7 @@ public class DrawCanvas extends Canvas implements Drawable {
 
     // 이력 전체 다시 그리기 
     @Override
-    public void paint(Graphics g) {
+    public void paint(Graphics g) { // repaint()가 호출될 때마다 이 메서드가 호출됨
         history.execute();
     }
 

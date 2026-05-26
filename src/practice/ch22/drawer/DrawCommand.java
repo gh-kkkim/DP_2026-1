@@ -3,6 +3,7 @@ package practice.ch22.drawer;
 import practice.ch22.command.Command;
 import java.awt.Point;
 
+// 그리기 명령
 public class DrawCommand implements Command {
     // 그리는 대상 
     protected Drawable drawable;
