@@ -13,7 +13,8 @@ public class MacroCommand implements Command {
     // 실행 
     @Override
     public void execute() {
-        for (Iterator<Command> it = commands.descendingIterator(); it.hasNext();) {
+        Iterator<Command> it = commands.descendingIterator();
+        while (it.hasNext()) {
             it.next().execute();
         }
     }
