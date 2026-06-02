@@ -2,6 +2,7 @@ package hw.ch22.command;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Iterator;
 
 public class MacroCommand implements Command {
     // 명령의 배열 
@@ -12,8 +13,8 @@ public class MacroCommand implements Command {
     // 실행 
     @Override
     public void execute() {
-        for (Command cmd: commands) {
-            cmd.execute();
+        for (Iterator<Command> it = commands.descendingIterator(); it.hasNext();) {
+            it.next().execute();
         }
     }
 
@@ -44,6 +45,6 @@ public class MacroCommand implements Command {
     // 전부 삭제 
     public void clear() {
         commands.clear();
-        // commandsForRedo.clear();
+        commandsForRedo.clear();
     }
 }

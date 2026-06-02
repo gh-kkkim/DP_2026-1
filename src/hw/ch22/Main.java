@@ -51,12 +51,23 @@ public class Main extends JFrame implements MouseMotionListener, WindowListener 
             history.append(cmd);
             cmd.execute();
         });
+        undoButton.addActionListener(e -> {
+            history.undo();
+            canvas.repaint();
+        });
+        redoButton.addActionListener(e -> {
+            history.redo();
+            canvas.repaint();
+        });
 
         Box buttonBox = new Box(BoxLayout.X_AXIS);
         buttonBox.add(clearButton);
         buttonBox.add(redButton);
         buttonBox.add(greenButton);
         buttonBox.add(blueButton);
+        buttonBox.add(undoButton);
+        buttonBox.add(redoButton);
+
         Box mainBox = new Box(BoxLayout.Y_AXIS);
         mainBox.add(buttonBox);
         mainBox.add(canvas);
@@ -92,5 +103,6 @@ public class Main extends JFrame implements MouseMotionListener, WindowListener 
 
     public static void main(String[] args) {
         new Main("Command Pattern Sample");
+        System.out.println("학번: 20240964 이름: 김가현");
     }
 }
